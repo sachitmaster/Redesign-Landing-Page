@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redesign Landing Page</title>
+    <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container1{
+            display: flex;
+            align-items: center;
+            padding-left: 7rem;
+            height: 80vh;
+            /* flex-direction: column; */
+            /* justify-content: center; */
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        .container2 h1{
+            font-family: 'Playfair Display', serif;
+            font-weight: normal;
+            font-size: 3rem;
+            word-spacing: .5rem;
+        }
+        .container2 .btn{
+            display: flex;
+            align-items: center;
+            border: none;
+            border-radius: 10px;
+            background-color: blueviolet;
+            color: white;
+            margin: 2rem 0rem;
+            padding: .9rem 3rem;
+            cursor: pointer;
+            width: fit-content;
+        }
+        .container3{
+            width: 100%;
+        }
+        .container3 img{
+            width: 100%;
+            /* height: 100vh; */
+        }
+        .container4{
+            /* border: 2px solid red; */
+            display: flex;
+            padding-left: 7rem;
+            padding-right: 7rem;
+            margin-bottom: 5rem;
+        }
+        .boxes1{
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0rem 1rem ;
+            box-shadow: 0px 0px 5px 2px gray;
+            border-radius: 5px;
+        }
+        .sticker{
+            font-size: 2.5rem;
+            margin: 1rem 0rem;
+        }
+        .boxesh3{
+            margin-bottom: 3rem;
+            font-family: 'Playfair Display', serif;
+            color: rgb(214, 91, 214);
+        }
+        .para1{
+            font-family: 'Roboto', sans-serif;
+            width: 78%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .btn2{
+            border: none;
+            padding: .8rem 3rem;
+            border-radius: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            background-color: blueviolet;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        .container5{
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 7rem;
+            padding-right: 7rem;
+        }
+        .boxes2{
+            /* border: 2px solid red; */
+            width: 35%;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 2px gray;
+            margin-bottom: 4rem;
+        }
+        .h1{
+            margin-left: 1rem;
+        }
+        .h2{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 1rem;
+        }
+        .boxes2 img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 40vh;
+        }
+        .para2{
+            margin-left: 1rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+        .para3{
+            margin-left: 1rem;
+            font-size: .8rem;
+            margin-bottom: 1rem;
+        }
+         .container6{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem 0rem;
+            font-family: 'Playfair Display', serif;
+            /* background-color: aquamarine; */
+        }
+        .container7{
+            /* border: 2px solid black; */
+            margin: 0rem 15rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* background-color: aquamarine; */
+        }
+        .boxes3{
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 41%;
+            margin: 1rem 2rem;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 0px 0px 5px 2px gray;
+        }
+        .para4{
+            font-size: 2rem;
+            margin: 1.5rem 0rem;
+        }
+        .hh3{
+            margin-bottom: 1rem;
+        }
+        .para5{
+            padding: 0rem .5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .btn3{
+            border: none;
+            border-radius: 10px;
+            background-color: blueviolet;
+            color: white;
+            padding: .7rem 2.5rem;
+            margin-bottom: 2rem;
+        }
+        @media screen and (max-width:1195px) {
+            .container7{
+                margin: 0rem 7rem;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .container4{
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+            .btn2{
+                padding: .5rem 2rem;
+            }
+            .container5{
+                padding-left: 6rem;
+                padding-right: 6rem;
+            }
+            .container7{
+                margin: 0rem 5rem;
+            }
+        }
+        @media screen and (max-width:750px) {
+            body{
+                width: 100%;
+            }
+            .container1{
+                padding-left: unset;
+                width: 100%;
+                height: 50vh;
+            }
+            .container2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+            }
+            .container2 h1{
+                font-size: .9rem;
+                text-align: center;
+                padding-left: .4rem;
+            }
+            .container2 .btn{
+                padding: 0rem 1rem;
+                width: fit-content;
+                height: 6vh;
+            }
+            .container3{
+                width: 50%;
+                background-size: cover;
+           }
+           .container4{
+               display: flex;
+               flex-direction: column;
+               width: 100%;
+               padding: 0rem 3rem;
+           }
+           .boxes1{
+               margin: 1rem 0rem;
+           }
+           .container5{
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+               padding: 0rem 3rem;
+           }
+           .boxes2{
+               width: unset;
+           }
+           .container6{
+               width: 100%;
+           }
+           .container7{
+               width: 100%;
+               margin: unset;
+           }
+           .boxes3{
+               width: unset;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="container2">
+        <h1>A One Stop Solution for your <b>Startup</b></h1>
+        <button class="btn">GET STARTED</button>
+    </div>
+        <div class="container3">
+        <img src="https://assets.thehansindia.com/h-upload/feeds/2019/05/15/175181-1.jpg" alt="">
+    </div>
+    </div>
+    <div class="container4">
+        <div class="boxes1">
+            <p class="sticker">🤝</p>
+            <h3 class="boxesh3">Co-Founder
+                Connect
+            </h3>
+            <p class="para1">
+                Enter the ecosystem and connect with like minded passionate people in the ecosystem.
+            </p>
+            <button class="btn2">KnowMore</button>
+        </div>
+        <div class="boxes1">
+            <p class="sticker">👨‍👩‍👧‍👦</p>
+            <h3 class="boxesh3">Crowdfunding
+            </h3>
+            <p class="para1">
+                Enter the ecosystem and connect with like minded passionate people in the ecosystem.
+            </p>
+            <button class="btn2">KnowMore</button>
+        </div>
+        <div class="boxes1">
+            <p class="sticker">👩🏽‍🤝‍👩🏽</p>
+            <h3 class="boxesh3">Join Our Angel Network
+            </h3>
+            <p class="para1">
+                Enter the ecosystem and connect with like minded passionate people in the ecosystem.
+            </p>
+            <button class="btn2">KnowMore</button>
+        </div>
+    </div>
+    <div class="container5">
+        <div class="boxes2">
+            <h1 class="h1">Recent Blogs</h1>
+        <img src="https://www.legalkart.com/frontend/client_base_web/layout-optim/legal-for-startup/startup-banner2.png" alt="">
+        <p class="para2">
+            Lessons for Entrepreneurship by Women in HealthTech................
+        </p>
+        <p class="para3">Startup India | Invest India</p>
+    </div>
+    <div class="boxes2">
+        <h1 class="h2">Testimonals</h1>
+        <img src="https://www.legalkart.com/frontend/client_base_web/layout-optim/legal-for-startup/startup-banner2.png" alt="">
+        <p class="para2">
+            Lessons for Entrepreneurship by Women in HealthTech................
+        </p>
+        <p class="para3">Startup India | Invest India</p>
+    </div>
+    </div>
+    <div class="container6">
+        <h1 class="hh1">
+            Our Services
+        </h1>
+    </div>
+    <div class="container7">
+        <div class="boxes3">
+            <p class="para4">🖥️</p>
+            <h3 class="hh3">
+                Pitch Deck
+            </h3>
+            <p class="para5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam minima at! Sit, nam! Culpa nesciunt inventore alias corrupti provident esse ad? Fuga, ut ea odio vero quaerat nam natus!</p>
+            <button class="btn3">KnowMore</button>
+        </div>
+        <div class="boxes3">
+            <p class="para4">👨</p>
+            <h3 class="hh3">
+                Tech Support
+            </h3>
+            <p class="para5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam minima at! Sit, nam! Culpa nesciunt inventore alias corrupti provident esse ad? Fuga, ut ea odio vero quaerat nam natus!</p>
+            <button class="btn3">KnowMore</button>
+        </div>
+        <div class="boxes3">
+            <p class="para4">📕</p>
+            <h3 class="hh3">
+                Legal Support
+            </h3>
+            <p class="para5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam minima at! Sit, nam! Culpa nesciunt inventore alias corrupti provident esse ad? Fuga, ut ea odio vero quaerat nam natus!</p>
+            <button class="btn3">KnowMore</button>
+        </div>
+        <div class="boxes3">
+            <p class="para4">🤼‍♀️</p>
+            <h3 class="hh3">
+                Mentorship
+            </h3>
+            <p class="para5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam minima at! Sit, nam! Culpa nesciunt inventore alias corrupti provident esse ad? Fuga, ut ea odio vero quaerat nam natus!</p>
+            <button class="btn3">KnowMore</button>
+        </div>
+    </div>
+</body>
+</html>
